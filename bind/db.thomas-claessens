@@ -2,16 +2,16 @@
 ; BIND data file for local loopback interface
 ;
 $TTL	604800
-@	IN	SOA	slimme-rik.sb.uclllabs.be. root.slimme-rik.sb.uclllabs.be. (
-			      6		; Serial
+@	IN	SOA	thomas-claessens.sb.uclllabs.be. root.thomas-claessens.sb.uclllabs.be. (
+			      7		; Serial
 			 604800		; Refresh
 			  86400		; Retry
 			2419200		; Expire
 			 604800 )	; Negative Cache TTL
 ;
-@	IN	NS	slimme-rik.sb.uclllabs.be.
+@	IN	NS	thomas-claessens.sb.uclllabs.be.
 @	IN	A	193.191.177.222
 @	IN	AAAA	::1
 ns	IN	A	193.191.177.222
-www	IN	A 	193.191.177.222
+www	IN	A	193.191.177.222
 test	IN	A	193.191.177.254
