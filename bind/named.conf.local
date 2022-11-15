@@ -14,6 +14,7 @@ file "/etc/bind/db.thomas-claessens";
 allow-transfer {193.191.176.254; 193.191.177.4; 193.191.177.188; };
 
 also-notify {193.191.176.254; 193.191.177.4; 193.191.177.188; };
+allow-query {any; };
 };
 
 zone "193.191.177.in-addr.arpa" {
@@ -25,6 +26,7 @@ file "/etc/bind/db.10";
 allow-transfer {193.191.176.254; 193.191.177.4; 193.191.177.188; };
 
 also-notify {193.191.176.254; 193.191.177.4; 193.191.177.188; };
+allow-query {any; };
 };
 
 zone "matthijs-vanriel.sb.uclllabs.be"{

@@ -3,13 +3,15 @@
 ;
 $TTL	604800
 @	IN	SOA	ns.thomas-claessens.sb.uclllabs.be. root.thomas-claessens.sb.uclllabs.be. (
-			      9		; Serial
+			     10		; Serial
 			 604800		; Refresh
 			  86400		; Retry
 			2419200		; Expire
 			 604800 )	; Negative Cache TTL
 ;
 @	IN	NS	ns.thomas-claessens.sb.uclllabs.be.
+@       IN      NS      ns1.uclllabs.be.
+@       IN      NS      ns2.uclllabs.be.
 @	IN	A	193.191.177.222
 ns	IN	A	193.191.177.222
 www	IN	A	193.191.177.222
