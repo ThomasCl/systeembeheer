@@ -31,6 +31,6 @@ allow-query {any; };
 
 zone "matthijs-vanriel.sb.uclllabs.be"{
 type slave;
-file "db.matthijs-vanriel";
+file "matthijs-vanriel.sb.uclllabs.be.bk";
 masters { 193.191.177.188;};
 };

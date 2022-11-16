@@ -1,0 +1,7 @@
+ErrorDocument 401 default
+
+#Protect dir private
+AuthName "Dialog prompt"
+AuthType Basic
+AuthUserFile /etc/www/ww1/private/.htpasswd
+Require valid-user
