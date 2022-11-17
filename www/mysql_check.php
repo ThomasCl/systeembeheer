@@ -1,24 +1,13 @@
-<html>
-<body>
-
 <?php
-
-$query = sprintf("SELECT * FROM check.log order by id desc limit 1");
-$result = mysql_query($query);
-
-if (!$result) {
+mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
+$mysqli = new mysqli("localhost", "bot", "rDEetGxq82DCE", "check");
+$query = $mysqli -> query("SELECT * FROM check.log order by id desc limit 1");
+if (!$query) {
     $message  = 'Invalid query: ' . mysql_error() . "\n";
     $message .= 'Whole query: ' . $query;
     die($message);
 }
-
-while ($row = mysql_fetch_assoc($result)) {
-	echo $row['id'];
-    	echo $row['date'];
+while ($row = mysqli_fetch_assoc($query)) {
     	echo $row['text'];
 }
-mysql_free_result($result);
-
 ?>
-</body>
-</html>
