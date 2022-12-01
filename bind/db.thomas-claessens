@@ -13,7 +13,9 @@ $TTL	604800
 @       IN      NS      ns1.uclllabs.be.
 @       IN      NS      ns2.uclllabs.be.
 @	IN	A	193.191.177.222
+@	IN	AAAA	2001:6a8:2880:a077::de
 ns	IN	A	193.191.177.222
+ns	IN	AAAA	2001:6a8:2880:a077::de
 www	IN	A	193.191.177.222
 test	IN	A	193.191.177.254
 www1	IN	A	193.191.177.222
