@@ -1,0 +1,8 @@
+iface eth0 inet6 static 
+    address 2001:6a8:2880:a077::de
+    netmask 64
+
+post-up /sbin/ip -f inet6 route add 2001:6a8:2880:a077::1 dev eth0 
+post-up /sbin/ip -f inet6 route add default via 2001:6a8:2880:a077::1
+pre-down /sbin/ip -f inet6 route del 2001:6a8:2880:a077::1 dev eth0
+pre-down /sbin/ip -f inet6 route del default via 2001:6a8:2880:a077::1
