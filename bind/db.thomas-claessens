@@ -3,7 +3,7 @@
 ;
 $TTL	604800
 @	IN	SOA	ns.thomas-claessens.sb.uclllabs.be. root.thomas-claessens.sb.uclllabs.be. (
-			     14		; Serial
+			     15		; Serial
 			 604800		; Refresh
 			  86400		; Retry
 			2419200		; Expire

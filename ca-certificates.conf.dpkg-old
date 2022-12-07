@@ -117,9 +117,9 @@ mozilla/TUBITAK_Kamu_SM_SSL_Kok_Sertifikasi_-_Surum_1.crt
 mozilla/TWCA_Global_Root_CA.crt
 mozilla/TWCA_Root_Certification_Authority.crt
 mozilla/TeliaSonera_Root_CA_v1.crt
-!mozilla/TrustCor_ECA-1.crt
-!mozilla/TrustCor_RootCert_CA-1.crt
-!mozilla/TrustCor_RootCert_CA-2.crt
+mozilla/TrustCor_ECA-1.crt
+mozilla/TrustCor_RootCert_CA-1.crt
+mozilla/TrustCor_RootCert_CA-2.crt
 mozilla/Trustwave_Global_Certification_Authority.crt
 mozilla/Trustwave_Global_ECC_P256_Certification_Authority.crt
 mozilla/Trustwave_Global_ECC_P384_Certification_Authority.crt
