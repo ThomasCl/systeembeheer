@@ -60,3 +60,4 @@ ntp:x:119:
 bind:x:120:
 mysql:x:121:
 netdev:x:122:
+wireshark:x:123:
