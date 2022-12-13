@@ -19,3 +19,4 @@ sudo ip neighbor show
 sudo /usr/lib/nagios/plugins/check_apt
 sudo ip neighbor show
 git status
+su mystery1_2014

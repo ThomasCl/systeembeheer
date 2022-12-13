@@ -17,43 +17,41 @@
 :ufw6-user-limit-accept - [0:0]
 ### RULES ###
 
-### tuple ### allow tcp 25 ::/0 any ::/0 in
--A ufw6-user-input -p tcp --dport 25 -j ACCEPT
-
-### tuple ### allow tcp 53 ::/0 any ::/0 in
--A ufw6-user-input -p tcp --dport 53 -j ACCEPT
+### tuple ### allow any 443 ::/0 any ::/0 in
+-A ufw6-user-input -p tcp --dport 443 -j ACCEPT
+-A ufw6-user-input -p udp --dport 443 -j ACCEPT
 
 ### tuple ### allow tcp 80 ::/0 any ::/0 in
 -A ufw6-user-input -p tcp --dport 80 -j ACCEPT
 
-### tuple ### allow tcp 443 ::/0 any ::/0 in
--A ufw6-user-input -p tcp --dport 443 -j ACCEPT
-
-### tuple ### allow tcp 993 ::/0 any ::/0 in
--A ufw6-user-input -p tcp --dport 993 -j ACCEPT
-
-### tuple ### allow tcp 22345 ::/0 any ::/0 in
--A ufw6-user-input -p tcp --dport 22345 -j ACCEPT
-
 ### tuple ### allow tcp 80,443 ::/0 any ::/0 Apache%20Full - in
 -A ufw6-user-input -p tcp -m multiport --dports 80,443 -j ACCEPT -m comment --comment 'dapp_Apache%20Full'
 
-### tuple ### allow tcp 22 ::/0 any ::/0 OpenSSH - in
--A ufw6-user-input -p tcp --dport 22 -j ACCEPT -m comment --comment 'dapp_OpenSSH'
+### tuple ### allow any 25 ::/0 any ::/0 in
+-A ufw6-user-input -p tcp --dport 25 -j ACCEPT
+-A ufw6-user-input -p udp --dport 25 -j ACCEPT
 
-### tuple ### allow any 53 ::/0 any ::/0 Bind9 - in
--A ufw6-user-input -p tcp --dport 53 -j ACCEPT -m comment --comment 'dapp_Bind9'
--A ufw6-user-input -p udp --dport 53 -j ACCEPT -m comment --comment 'dapp_Bind9'
+### tuple ### allow any 53 ::/0 any ::/0 in
+-A ufw6-user-input -p tcp --dport 53 -j ACCEPT
+-A ufw6-user-input -p udp --dport 53 -j ACCEPT
 
-### tuple ### allow any 21 ::/0 any ::/0 in
--A ufw6-user-input -p tcp --dport 21 -j ACCEPT
--A ufw6-user-input -p udp --dport 21 -j ACCEPT
+### tuple ### allow any 80 ::/0 any ::/0 in
+-A ufw6-user-input -p tcp --dport 80 -j ACCEPT
+-A ufw6-user-input -p udp --dport 80 -j ACCEPT
 
-### tuple ### allow tcp 21 ::/0 any ::/0 in
--A ufw6-user-input -p tcp --dport 21 -j ACCEPT
+### tuple ### allow any 993 ::/0 any ::/0 in
+-A ufw6-user-input -p tcp --dport 993 -j ACCEPT
+-A ufw6-user-input -p udp --dport 993 -j ACCEPT
 
-### tuple ### allow tcp 3306 ::/0 any ::/0 in
--A ufw6-user-input -p tcp --dport 3306 -j ACCEPT
+### tuple ### allow any 22345 ::/0 any ::/0 in
+-A ufw6-user-input -p tcp --dport 22345 -j ACCEPT
+-A ufw6-user-input -p udp --dport 22345 -j ACCEPT
+
+### tuple ### allow tcp 22 ::/0 any ::/0 in
+-A ufw6-user-input -p tcp --dport 22 -j ACCEPT
+
+### tuple ### allow tcp 443 ::/0 any ::/0 in
+-A ufw6-user-input -p tcp --dport 443 -j ACCEPT
 
 ### END RULES ###
 
